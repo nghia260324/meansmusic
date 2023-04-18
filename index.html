@@ -39,12 +39,26 @@
                             <div class="top-bar-item">
                                 <a href="#">TOP MUSIC</a>
                             </div>
-                            <div class="top-bar-item">
-                                <!-- <a href="#">Premium</a> -->
+                            <!-- <div class="top-bar-item">
                                 <i title="Thông Báo" class="fa-solid fa-bell"></i>
                             </div>
                             <div class="top-bar-item icon-youtube">
                                 <a title="Youtube" href="https://www.youtube.com/@SQVNytNru"><i class="fa-brands fa-youtube "></i></a>
+                            </div> -->
+                            <div class="top-bar-item icon-more">
+                                <i title="More" class="fa-solid fa-ellipsis-vertical"></i>
+                                <div class="top-bar-sub-menu">
+                                    <div class="tb-sub-menu-item">
+                                        <i class="fa-solid fa-bell"></i>
+                                        Thông Báo
+                                    </div>
+                                    <div class="tb-sub-menu-item">
+                                        <a title="Youtube" href="https://www.youtube.com/@SQVNytNru">
+                                            <i class="fa-brands fa-youtube "></i>
+                                            Youtube
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -164,6 +178,11 @@
         ckIcon.onclick = function() {
             var menu = document.querySelector(".top-bar-menu");
             menu.classList.toggle("active");
+        }
+        var ckIconMore = document.querySelector(".icon-more");
+        ckIconMore.onclick = function() {
+            var submenu = document.querySelector(".top-bar-sub-menu");
+            submenu.classList.toggle("active");
         }
     </script>
 </body>
